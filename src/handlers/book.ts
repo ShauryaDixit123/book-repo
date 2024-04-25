@@ -1,7 +1,7 @@
 import express, { Request, Response } from "express";
 import { parse } from "csv-parse";
 // import { promises as fs } from "fs";
-import { Book, bookService, cvtRowsToBook } from "../db/books";
+import { Book, bookService, cvtRowsToBook } from "../services/books";
 import { v4 as uuidv4 } from "uuid";
 import { ADMIN_ROLE, USER_ROLE, userRole } from "../db/user";
 import { routeRoleMiddleware } from "../middleware";
